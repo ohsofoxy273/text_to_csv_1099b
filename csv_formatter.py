@@ -17,8 +17,9 @@ def text_doc_opener(document):
 		for line in line_list:
 			line = line[::2]
 			line = line.translate(None, '"')
-			line = line.rstrip()
+			#line = line.rstrip()
 			line = line.replace(" ", "")
+			print line
 			OUTPUT_LIST.append(line)
 
 		count = 0
